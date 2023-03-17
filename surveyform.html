@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="surveyform.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+      <p id="description">Survey Form</p>
+      <form id="survey-form" method="post">
+        <fieldset class="info">
+        <label id="name-label">Enter your name: <input id="name" type="text" required placeholder="Enter your name"></label>
+        <label id="email-label">Enter your email: <input id="email" type="text" font="email" required placeholder="Enter your email"></label>
+        <label id="number-label">Enter your number: <input id="number" type="number" minlength="10" maxlength="11" placeholder="Enter your number"></label>
+    </fieldset>
+        <select id="dropdown">
+            <option value="1">student</option>
+            <option value="2">working</option>
+        </select>
+        <fieldset class="box">
+            Choose your gender:
+           <label for="Male"><input id="Male" type="radio" name="gender">Male</label> 
+           <label for="Female"><input id="Female" type="radio" name="gender">Female</label> 
+           <label for="Character">Choose your character:</label>
+        <label class="checkbox-btn"> 
+            <label for="checkbox"></label>
+            <input type="checkbox" value="funny">Funny
+            <span class="checkmark"></span>
+        </label>
+        <label class="checkbox-btn">
+            <label for="checkbox"></label>
+            <input type="checkbox" value="patient">Patient
+            <span class="checkmark"></span>
+        </label>
+        <label class="checkbox-btn">
+            <label for="checkbox"></label>
+             <input type="checkbox" value="angry">Angry
+             <span class="checkmark"></span>
+            </label>
+        </fieldset>
+        <fieldset class="comment">
+            Leave your comment
+        <textarea id="comment" placeholder="Add your comment"></textarea>
+        <label for="submit"><input type="button" id="submit" value="Submit"></label>
+    </fieldset>
+        </form>
+    </body>
+</html>
